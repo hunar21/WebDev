@@ -2,77 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai&Cocoa</title>
+    <title>Your Online Store</title>
     <style>
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            color: peru;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        .imageBestSeller {
-            width: 20%;
-            height: auto;
-            display: inline-block; /* Ensure images are treated as block elements */
-            margin: 0 auto; /* Center the images horizontally */
-        }
-
-        a {
-            color: green;
-            font-size: larger;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-inline-end: 50px;
-        }
-
-        .imagetd {
-            width: 220px;
-        }
-
-        .imageText {
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
             text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        #banner {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .product {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- this table is for setting the navigation bar  -->
-    <table>
-        <tr>
-            <td class="imagetd">  
-                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/logo.png" class="style1" width="150" height="auto" alt="logo">        
-            </td>
-            <td><a href="#">All</a></td>            
-            <td><a href="#">Categories</a></td>    
-            <td><a href="#">Best Selling</a></td>            
-            <td><a href="#">About</a></td>
-            <td><a href="#">Contact Us</a></td>
-        </tr>
-    </table>
-    <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/coffee.png" width="100%" height="450px">
 
-    <!-- this is for showing the best selling products -->
-    <br> <br> <br> <br>
-    <div style="text-align: center;">
-        <h1>Best Sellers</h1>
-        <nav> 
-            <div class="imageText">
-                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/americano.jpeg" alt="americano">
-                <p>Americano</p>
+    <header>
+        <h1>Your Online Store</h1>
+    </header>
+
+    <nav>
+        <div>
+            <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/logo.png" alt="Your Logo" height="50">
+        </div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#best-selling">Best Selling</a>
+            <a href="#trending">Trending</a>
+            <!-- Add more category links as needed -->
+        </div>
+    </nav>
+
+    <section id="banner">
+        <h2>Welcome to Our Online Store</h2>
+        <p>Discover the latest and best products!</p>
+    </section>
+
+    <section id="best-selling">
+        <h2 style="text-align:center">Best Selling Products</h2>
+        <br>
+        <div class="product-container">
+            <!-- Example product 1 -->
+            <div class="product">
+                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/americano.jpeg" alt="Product 1">
+                <h3>Americano</h3>
             </div>
-            <div class="imageText">
-                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/chai.jpeg" alt="chai">
-                <p>Chai</p>
+            <!-- Example product 2 -->
+            <div class="product">
+                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/chai.jpeg" alt="Product 2">
+                <h3>Chai</h3>
             </div>
-            <div class="imageText">
-                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/IcedLatte.jpeg" alt="IcedLatte">
-                <p>Iced Latte</p>
+            <div class="product">
+                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/tripleFruit.jpeg" alt="Product 3">
+                <h3>Tripple Fruit</h3>
             </div>
-            <div class="imageText">
-                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/tripleFruit.jpeg" alt="tripleFruit">
-                <p>Triple Fruit</p>
+            <!-- Add more best-selling products as needed -->
+        </div>
+    </section>
+
+    <section id="trending">
+        <h2>Trending Products</h2>
+        <div class="product-container">
+            <!-- Example product 3 -->
+            <div class="product">
+                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/IcedLatte.jpeg" alt="Product 3">
+                <h3>Iced Latte</h3>
             </div>
-        </nav>
-    </div>
+            <!-- Example product 4 -->
+            <div class="product">
+                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/tripleFruit.jpeg" alt="Product 3">
+                <h3>Tripple Fruit</h3>
+            </div>
+            <div class="product">
+                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/saltedCaramelColdBrew.jpeg" alt="Product 4">
+                <h3>Salted Caramel Cold Brew </h3>
+            </div>
+            <!-- Add more trending products as needed -->
+        </div>
+    </section>
+
+    <!-- More sections and content can be added based on your requirements -->
+
 </body>
 </html>
