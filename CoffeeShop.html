@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai&Cocoa</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: peru;
+        }
+
+        .imageBestSeller {
+            width: 20%;
+            height: auto;
+            display: inline-block; /* Ensure images are treated as block elements */
+            margin: 0 auto; /* Center the images horizontally */
+        }
+
+        a {
+            color: green;
+            font-size: larger;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-inline-end: 50px;
+        }
+
+        .imagetd {
+            width: 220px;
+        }
+
+        .imageText {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- this table is for setting the navigation bar  -->
+    <table>
+        <tr>
+            <td class="imagetd">  
+                <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/logo.png" class="style1" width="150" height="auto" alt="logo">        
+            </td>
+            <td><a href="#">All</a></td>            
+            <td><a href="#">Categories</a></td>    
+            <td><a href="#">Best Selling</a></td>            
+            <td><a href="#">About</a></td>
+            <td><a href="#">Contact Us</a></td>
+        </tr>
+    </table>
+    <img src="/Users/parveenkumar/Desktop/web dev udemy/Images/coffee.png" width="100%" height="450px">
+
+    <!-- this is for showing the best selling products -->
+    <br> <br> <br> <br>
+    <div style="text-align: center;">
+        <h1>Best Sellers</h1>
+        <nav> 
+            <div class="imageText">
+                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/americano.jpeg" alt="americano">
+                <p>Americano</p>
+            </div>
+            <div class="imageText">
+                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/chai.jpeg" alt="chai">
+                <p>Chai</p>
+            </div>
+            <div class="imageText">
+                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/IcedLatte.jpeg" alt="IcedLatte">
+                <p>Iced Latte</p>
+            </div>
+            <div class="imageText">
+                <img class="imageBestSeller" src="/Users/parveenkumar/Desktop/web dev udemy/Images/tripleFruit.jpeg" alt="tripleFruit">
+                <p>Triple Fruit</p>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
